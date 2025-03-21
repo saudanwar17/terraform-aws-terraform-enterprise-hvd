@@ -131,7 +131,7 @@ locals {
     #tfe_run_pipeline_docker_extra_hosts = "" // computed inside of tfe_user_data script if `tfe_hairpin_addressing` is `true` because EC2 private IP is used
 
     # Network settings
-    tfe_iact_subnets         = ""
+    tfe_iact_subnets         = join(",", ["0.0.0.0/0"])
     tfe_iact_time_limit      = 60
     tfe_iact_trusted_proxies = ""
     http_proxy               = var.http_proxy != null ? var.http_proxy : ""
