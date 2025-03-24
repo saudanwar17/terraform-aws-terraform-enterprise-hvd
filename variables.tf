@@ -977,3 +977,9 @@ variable "tfe_cost_estimation_iam_enabled" {
   description = "Boolean to add AWS pricing actions to TFE IAM instance profile for cost estimation feature."
   default     = true
 }
+
+variable "iact_subnets" {
+  type        = string
+  description = "to add list of subnets that are allowed to retrieve iact token through web url"
+  default     = ""
+}

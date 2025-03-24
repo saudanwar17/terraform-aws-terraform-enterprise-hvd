@@ -47,6 +47,7 @@ module "tfe" {
   cidr_allow_ingress_ec2_ssh           = var.cidr_allow_ingress_ec2_ssh
   cidr_allow_ingress_tfe_metrics_http  = var.cidr_allow_ingress_tfe_metrics_http
   cidr_allow_ingress_tfe_metrics_https = var.cidr_allow_ingress_tfe_metrics_https
+  iact_subnets                         = var.iact_subnets
 
   # --- DNS (optional) --- #
   create_route53_tfe_dns_record      = var.create_route53_tfe_dns_record
